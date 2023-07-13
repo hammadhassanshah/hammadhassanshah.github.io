@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+
+
+</head>
+<body>
+
+    <div class="button-container">
+        <button onclick="goToProj()">Home</button>
+        <script>
+            function goToProj() {
+                var index_link = "Index.html";
+                window.location.href = index_link;
+            }
+        </script>
+
+
+        <button onclick="goToLink()">Projects</button>
+            <script>
+            function goToLink() {
+                var projects_link = "Projects.html";
+                window.location.href = projects_link;
+            }
+            </script>
+
+
+
+        <button onclick="goToPDF()">Resume</button>
+        <script>
+            function goToPDF() {
+                var pdfLink = "Personal_Portfolio/hassanresume.pdf";
+                var link = document.createElement("a");
+                link.href = pdfLink;
+                link.download = "hassanresume.pdf";
+                link.target = "_blank";
+                link.click();
+            }
+
+        </script>
+
+
+
+        <button onclick="goToGitHub()">GitHub</button>
+
+        <script>
+            function goToGitHub() {
+                // Specify the URL of the website you want to link to
+                var websiteLink = "https://github.com/hammadhassanshah";
+        
+                // Open the website in a new tab or window
+                window.open(websiteLink, "_blank");
+            }
+        </script>
+    </div>
+
+    <div class="proj-txt">Project Ideas </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+
+
+</head>
+<body>
+
+
+    <div class="button-container">
+        <button onclick="goToProj()">Home</button>
+        <script>
+            function goToProj() {
+                var index_link = "Index.html";
+                window.location.href = index_link;
+            }
+        </script>
+
+
+        <button onclick="goToLink()">Projects</button>
+            <script>
+            function goToLink() {
+                var projects_link = "Projects.html";
+                window.location.href = projects_link;
+            }
+            </script>
+
+
+
+        <button onclick="goToPDF()">Resume</button>
+        <script>
+            function goToPDF() {
+                var pdfLink = "Personal_Portfolio/hassanresume.pdf";
+                var link = document.createElement("a");
+                link.href = pdfLink;
+                link.download = "hassanresume.pdf";
+                link.target = "_blank";
+                link.click();
+            }
+
+        </script>
+
+
+
+        <button onclick="goToGitHub()">GitHub</button>
+
+        <script>
+            function goToGitHub() {
+                // Specify the URL of the website you want to link to
+                var websiteLink = "https://github.com/hammadhassanshah";
+        
+                // Open the website in a new tab or window
+                window.open(websiteLink, "_blank");
+            }
+        </script>
+        &:hover {
+            transform: scale(1.5);
+        }
+    </div>
+
+
+
+    <div class = "image">
+        <img src="images/hassan-modified.png" alt="Your image">
+    </div>
+
+
+
+
+    <div class="wrapper">
+        <div class="static-txt">Hi, I'm Hammad! I am a </div>
+        <ul class="dynamic-txts">
+          <li><span>Student</span></li>
+          <li><span>Software Engineer</span></li>
+          <li><span>Data Enthusiast</span></li>
+          <li><span>Cricketer</span></li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="page-wrapper">
+        <div class="left-section">
+            <h1>My Story</h1>
+        </div>
+            <div class="divider"></div>
+        <div class="right-section">
+            <h1> Thank you for visiting my website. I am senior at Boston College, studying Computer Science and Finance with immense interests in knowing and understanding the world around me. Currently at BC, I'm the Treausrer of Muslim Students Association, Teaching Assistant in the Computer Science Department, and have also served as the Reseidential Assistant. I first fell in love with programming during my Bioinformatics work at Weill Cornell Medical College and have since worked at different companies and on different projects to enhance my skills. I absolutley love watching movies and analyzing the cinematic techniques directors use, playing tennis, and of course indoor rock climbing.
+            </h1>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+    <h1 id="typing"></h1>
+
+    <script>
+        var typed = new Typed('#typing', {
+            strings: ["Hi I'm Hammad. Welcome to my website"],
+            typeSpeed: 50,
+            loop: false,
+            loopCount: 0
+        });
+    </script>
+
+-->
+
+    <div class="container">
+        <div class="timeline">
+          <ul>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">June 2023 - August 2023</h3>
+                <h1>SWE Intern @ Rockefeller Wealth Management</h1>
+                <p>
+                Developed financial insight models based on Alternative Investments, Structured Products, and Industry Sector dimension analysis to help Rockefeller advising groups understand irregularities in their clients’ portfolios. <br><br>
+                Used SQL and Python libraries like PySpark, NumPy, Pandas, and Matplotlib to enhance insight specific dimensions before tuning the models based on the elbow method for K means clustering. <br><br>
+                Deposited insights into a repository and generated APIs used at the enterprise level to generate client and household specific alerts on the advisors’ dashboards.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">June 2022 - August 2022</h3>
+                <h1>SWE Intern @ Memorial Sloan Kettering</h1>
+                <p>
+                Engineered Pipelines based off Software Robots constructed using UI Path Studio and Python to automate intricate financial transactions in both classic and modern workflows powered by the .NET Framework.<br><br>
+                RPA robots were constructed to handle payroll information for hospital nurses in times of incorrect payroll period entries, paid/unpaid vacations, and overtime work without requiring human inputs.<br><br>
+                UI Path Orchestrator was used to manage robots, track data outflow, and report exceptional error messages. Cumulatively robots saved the hospital over 1500hrs/year of manual labor.<br><br>
+
+
+
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">September 2021 - February 2022</h3>
+                <h1>Research Assistant @ Harvard University</h1>
+                <p>
+                Used Dual Inverted Selective Plane Illuminating Microscopy (diSPIM) to track movement of cellular organelles in response to bacterial stimuli to track movement or organelles in human epithelial cells.<br><br>
+                Analyzed localization changes by developing a Java program that would quantify organelle movements over 100s of milliseconds both pre and post bacterial treatment
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">September 2017 - December 2019</h3>
+                <h1>Bioinformatics Intern @ Weill Cornell Medicine</h1>
+                <p>
+                Developed a synergistic drug combination based on algorithmic analysis of drug-drug interactions using R programming and Chou-Talalay Synergy Indexes for B cell lymphoma patients. <br><br>
+                Defined biostatistical significance using GraphPad Prism and ggplot from R and analyzed RNA sequencing and Proteomics via R packages Seurat and fsuego.<br><br>
+                Conducted western blots, immunohistochemistry, and both single and multiple cell RNA sequencing to identify specific genetic markers. These markers were further tagged using the R package Single R
+
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+</body>
+</html>
+
+
+
+

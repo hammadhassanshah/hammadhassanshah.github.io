@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+}
+
+.button-container {
+    text-align: right;
+    padding: 20px;
+    background-color: #111;
+    padding-left: 9in;
+
+}
+
+
+
+
+
+
+
+
+.wrapper{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  background: black;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 100;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: rgb(16, 151, 16);
+  font-size: 40px;
+  font-weight: 300;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+  font-weight: bolder;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 10px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 150%;
+  width: 100%;
+  background: black;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.text {
+    flex: 1;
+    text-align: center;
+}
+
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    background-color: black;
+
+
+}
+
+.image img {
+    max-width: 14%;
+    max-height: 14%;
+    object-fit: cover;
+}
+
+
+
+
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+
+
+.button-container button:hover {
+    transform: scale(1.2);
+    transition: all .2s ease-in-out
+}
+
+
+
+/* HERE THE ABOUT ME STARTS */
+
+.page-wrapper {
+    display: flex;
+    height: 70vh;
+  }
+  
+  .divider {
+    width: 2px;
+    background-color: black;
+  }
+  
+  .left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 5%;
+
+  }
+
+
+  .right-section {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-family: "Montserrat";
+    padding-left: 1in;
+    padding-right: 1in;
+    font-size: 13px;
+    font-family: Montserrat;
+    line-height: 1.5;
+  }
+
+
+
+/* HERE THE ABOUT ME ENDS */
+
+
+
+
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: black;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+}
+
+
+/* PROJECT STYLING */
+
+.proj-txt {
+    color: aquamarine;
+    font-size: large;
+}
