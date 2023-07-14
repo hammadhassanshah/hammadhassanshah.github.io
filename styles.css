@@ -6,12 +6,13 @@
 }
 html {
   font-family: "Montserrat";
+  background-color: black;
 }
 
 .button-container {
     text-align: right;
     padding: 20px;
-    background-color: #111;
+    background-color: black;
     padding-left: 9in;
 
 }
@@ -168,8 +169,6 @@ html {
 
 
 
-
-
 .container {
   min-height: 100vh;
   width: 100%;
@@ -273,6 +272,30 @@ html {
   }
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-right: 50px; /* Adjust the margin value as per your desired spacing */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* PROJECT STYLING */
 
@@ -280,3 +303,49 @@ html {
     color: aquamarine;
     font-size: large;
 }
+
+
+
+
+
+.rounded-square-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.rounded-square {
+  width: 300px;
+  height: 400px;
+  background-color: gainsboro;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 60px;
+  position: relative;
+  transition: box-shadow 0.3s;
+  overflow: hidden;
+
+}
+
+.rounded-square-button-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translate(0, -50%);
+  color: black;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left; /* Center the text */
+  padding: 0 20px; /* Add padding on the left and right */
+  box-sizing: border-box; 
+}
+
+.rounded-square:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+

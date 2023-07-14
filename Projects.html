@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
 </head>
 <body>
-
     <div class="button-container">
         <button onclick="goToProj()">Home</button>
         <script>
@@ -23,7 +20,6 @@
             }
         </script>
 
-
         <button onclick="goToLink()">Projects</button>
             <script>
             function goToLink() {
@@ -31,8 +27,6 @@
                 window.location.href = projects_link;
             }
             </script>
-
-
 
         <button onclick="goToPDF()">Resume</button>
         <script>
@@ -47,8 +41,6 @@
 
         </script>
 
-
-
         <button onclick="goToGitHub()">GitHub</button>
 
         <script>
@@ -60,11 +52,33 @@
                 window.open(websiteLink, "_blank");
             }
         </script>
+
     </div>
 
-    <div class="proj-txt">Project Ideas </div>
+
+    <div class="rounded-square-container">
+      <div class="rounded-square">
+        <div class="rounded-square-button-text">  Developed a cssh using C language, which allows users to execute commands and launch additional programs. Implemented parsing of input, forking and executing of commands, handling of built-in commands, support for background processes, signal handling, command history, tab completion, error handling, and efficient memory management. 
+        </div>
+      </div>
+      <div class="rounded-square">
+        <div class="rounded-square-button-text"> Engineered market planning tool by leveraging LinkedIn Economic Graph API, using Flask for backend infrastructure, scikit-learn for time series analysis, SQL for data management, and JavaScript with RESTful APIs and D3.js for engaging frontend visualizations.</div>
+      </div>
+      <div class="rounded-square">
+        <div class="rounded-square-button-text"> Developed a deep learning model analyzing sentiment towards political figures and policies using ML algorithms (SVM, RF) and Twitter API. Leveraged NLTK, spaCy, and BERT for text processing, enabling accurate insights. Applied topic modeling and named entity recognition for identifying political topics and associated sentiment.</div>
+      </div>
+    </div>
 
 
 
-</body>
-</html>
+
+
+  </body>
+  </html>
+  
+
+
+   
+
+
+
